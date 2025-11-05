@@ -1,0 +1,56 @@
+<!-- media/architecture.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="520" viewBox="0 0 980 520">
+  <defs>
+    <style>
+      .box{fill:#fff;stroke:#111;stroke-width:2}
+      .title{font:700 18px/1.2 system-ui,Segoe UI,Arial}
+      .text{font:400 15px/1.35 system-ui,Segoe UI,Arial}
+      .ghost{fill:#f6f6f6;stroke:#bbb;stroke-dasharray:6 6}
+      .wire{stroke:#111;stroke-width:2;marker-end:url(#arrow)}
+      .sig{stroke:#777;stroke-width:1.5;stroke-dasharray:5 4;marker-end:url(#arrow)}
+      .pin{font:500 13px/1.2 system-ui,Segoe UI,Arial;fill:#444}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#111"/>
+    </marker>
+  </defs>
+
+  <!-- Left board (Input) -->
+  <rect x="40" y="80" width="280" height="180" class="box" rx="10"/>
+  <text x="60" y="108" class="title">Nucleo (Input Board)</text>
+  <text x="60" y="138" class="text">• 5 pill-select buttons</text>
+  <text x="60" y="162" class="text">• Count (+1) button</text>
+  <text x="60" y="186" class="text">• Reset button</text>
+  <text x="60" y="210" class="text">• Confirm (send)</text>
+
+  <!-- Right board (Dispenser) -->
+  <rect x="660" y="80" width="280" height="180" class="box" rx="10"/>
+  <text x="680" y="108" class="title">Nucleo (Dispenser Board)</text>
+  <text x="680" y="138" class="text">• SG90: hatch</text>
+  <text x="680" y="162" class="text">• SG90: rotation (1:2 gear)</text>
+  <text x="680" y="186" class="text">• UART receive</text>
+
+  <!-- UART link -->
+  <line x1="320" y1="170" x2="660" y2="170" class="wire"/>
+  <text x="437" y="154" class="pin">UART (TX → RX), GND</text>
+  <text x="437" y="196" class="pin">9600–115200 baud (example)</text>
+
+  <!-- Power brick -->
+  <rect x="440" y="320" width="120" height="70" class="box" rx="10"/>
+  <text x="450" y="345" class="title">5V Supply</text>
+  <text x="450" y="370" class="text">≤ 10 W total</text>
+
+  <!-- power lines -->
+  <line x1="500" y1="320" x2="180" y2="260" class="sig"/>
+  <line x1="500" y1="320" x2="800" y2="260" class="sig"/>
+  <text x="360" y="296" class="pin">5V &amp; GND</text>
+  <text x="680" y="296" class="pin">5V &amp; GND</text>
+
+  <!-- Mechanical assembly -->
+  <rect x="650" y="300" width="300" height="180" class="ghost" rx="12"/>
+  <text x="665" y="326" class="title">Mechanical Assembly</text>
+  <text x="665" y="352" class="text">• Cylindrical container (5 compartments)</text>
+  <text x="665" y="374" class="text">• Slanted funnel base (≥ 18°)</text>
+  <text x="665" y="396" class="text">• Central rod + gears (1:2)</text>
+  <text x="665" y="418" class="text">• Protective cover + hatch</text>
+</svg>
