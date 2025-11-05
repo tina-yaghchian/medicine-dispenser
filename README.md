@@ -39,15 +39,15 @@ media/         Photos, diagram, demo video
 
 ## ▶️ Demo Video (inline)
 <!-- GitHub can render .mov; include HTML video tag for inline playback -->
-<video src="media/4b15dedfc1164a979780371d074ae1c2.mov" width="640" controls></video>
+<video src="media/Test.mov" width="640" controls></video>
 
-If your browser doesn’t autoplay inline, download: [4b15dedfc1164a979780371d074ae1c2.mov](media/4b15dedfc1164a979780371d074ae1c2.mov)
+If your browser doesn’t autoplay inline, download: [Test.mov](media/Test.mov)
 
 ## 📸 Prototype
-<img src="media/IMG_0438.jpeg" width="520" alt="Physical prototype in lab"/>
+<img src="media/Present.jpeg" width="520" alt="Physical prototype in lab"/>
 
 ## 🔌 Circuit Diagram
-<img src="media/circut.png" width="520" alt="Circuit diagram"/>
+<img src="media/circuit.png" width="520" alt="Circuit diagram"/>
 
 ## 🧪 Tests
 - Communication ≥ 1 m
