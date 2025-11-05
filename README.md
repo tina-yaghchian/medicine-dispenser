@@ -8,6 +8,9 @@ An embedded **medicine dispenser** using two STM32 Nucleo-F401RE boards (UART), 
 ## 🗺️ System Diagram
 <img src="media/architecture.svg" width="820" alt="System Architecture"/>
 
+## 💡 Idea Sketch
+<img src="Idea.png" width="500" alt="Concept sketch">
+
 ## 📦 Repo Structure
 ```
 hardware/      CAD + circuits
