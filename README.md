@@ -13,11 +13,9 @@ An embedded **medicine dispenser** using two STM32 Nucleo-F401RE boards (UART), 
 
 ## 💊 CAD Models
 
-![Medicine Dispenser 3D Model](./media/Preview.png)
+<img src="media/Preview.png" width="520" alt="3D Modeling"/>
 
-![Medicine Dispenser 3D Model (side)](./media/Side Preview.png)
-
-
+<img src="media/Side Preview.png" width="520" alt="3D Modeling (side)"/>
 
 [medicine_dispenser.dwg](./medicine_dispenser.dwg) | Final 3D AutoCAD assembly
 
